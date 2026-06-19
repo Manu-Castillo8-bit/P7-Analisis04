@@ -7,11 +7,8 @@ namespace P7_Analisis04
         public App()
         {
             InitializeComponent();
+              MainPage = new MainPage();
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new AppShell());
-        }
     }
 }
