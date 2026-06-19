@@ -6,7 +6,12 @@
    <Application.Resources>
         <ResourceDictionary>
         
+            <!-- DEFINIR LOS COLORES PRIMERO -->
+            <Color x:Key="Primary">#512BD4</Color>
+            <Color x:Key="White">#FFFFFF</Color>
+            <Color x:Key="Black">#000000</Color>
             
+            <!-- AHORA SÍ PUEDES USARLOS -->
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="{AppThemeBinding Light={StaticResource Primary}, Dark={StaticResource White}}" />
                 <Setter Property="FontFamily" Value="OpenSansRegular" />
@@ -15,6 +20,7 @@
             <Style TargetType="ContentPage">
                 <Setter Property="BackgroundColor" Value="{AppThemeBinding Light={StaticResource White}, Dark={StaticResource Primary}}" />
             </Style>
+            
         </ResourceDictionary>
     </Application.Resources>
 </Application>
